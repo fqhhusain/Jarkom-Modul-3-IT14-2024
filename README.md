@@ -508,6 +508,8 @@ apt install lynx
 ```
 lynx http://192.240.2.2
 ```
+![Screenshot 2024-10-27 133754](https://github.com/user-attachments/assets/713987a2-6d42-43ce-8cd8-f5176e49b00b) <br/>
+![Screenshot 2024-10-27 133820](https://github.com/user-attachments/assets/44e83401-64d6-4c0b-9f56-c9f5cb084bc4) <br/>
 
 ## Soal 7
 
@@ -616,6 +618,9 @@ Pada Erwin
 ab -n 6000 -c 200 http://eldia.it14.com/
 ```
 
+![Screenshot 2024-10-27 135432](https://github.com/user-attachments/assets/f128a37b-60b9-4cf7-9ae4-e7bb4e066679) <br/>
+![Screenshot 2024-10-27 135523](https://github.com/user-attachments/assets/756c9411-037b-45e8-8707-06bb6cb0a90f) <br/>
+
 ## Soal 8
 
 > Karena Erwin meminta “laporan kerja Armin”, maka dari itu buatlah analisis hasil testing dengan 1000 request dan 75 request/second untuk masing-masing algoritma Load Balancer dengan ketentuan sebagai berikut:
@@ -678,6 +683,7 @@ Pada client akses lynx http://eldia.it14.com
 
 Akan muncul kegagalan auth bila salah kredensial:
 
+![Screenshot 2024-10-27 143551](https://github.com/user-attachments/assets/f18fa932-9d2b-4662-acce-6ece378d7b1c)
 
 
 ## Soal 11
@@ -733,6 +739,7 @@ service nginx restart
 
 Akan terlihat Attack on Titan wiki bila memasukkan `lynx eldia.it14.com/titan`:
 
+![Screenshot 2024-10-27 144354](https://github.com/user-attachments/assets/b16ca568-ad37-4982-8f42-2187e8ea32e9)
 
 ## Soal 12
 
@@ -792,7 +799,10 @@ service nginx restart
 
 Bila IP tidak sesuai maka akan muncul sebagai berikut:
 
-![failed ip](assets/gallery/fixed.png)
+![failed ip](https://github.com/user-attachments/assets/973d04ea-9e44-4305-85ea-85b18aa39615) <br/>
+![Screenshot 2024-10-27 152250](https://github.com/user-attachments/assets/2b6a3a30-1830-4d28-a8cd-674542759709)
+
+
 
 ### Konfigurasi tambahan pada Tybur (DHCP Server)
 
@@ -906,6 +916,9 @@ Untuk memastikan setiap worker "Laravel" dapat connect kepada database yang dibu
 ```
 mysql --host=192.240.3.2 --port=3306 --user=it14 --password=it14 db_it14 -e "SHOW DATABASES;"
 ```
+![Screenshot 2024-10-27 164232](https://github.com/user-attachments/assets/8a1eb1d3-a972-4a40-9b0b-f1235ef596b0)
+![Screenshot 2024-10-27 164224](https://github.com/user-attachments/assets/eccbf6bc-1133-49f2-9fdb-8b7fb7e39e04)
+![Screenshot 2024-10-27 164217](https://github.com/user-attachments/assets/876791e8-ba77-46c8-b39b-e21469b72ed2)
 
-![database](assets/gallery/db.png)
+
 
