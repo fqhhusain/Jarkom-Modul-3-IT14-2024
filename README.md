@@ -374,7 +374,7 @@ echo 'options {
 service bind9 restart
 ```
 
-## Soal 1
+## Soal 1 - 5
 
 > Lakukan konfigurasi sesuai dengan peta yang sudah diberikan.
 
@@ -382,9 +382,16 @@ service bind9 restart
 * [Tabel IP](#tabel-ip)
 * [Konfigurasi IP](#konfigurasi-ip)
 
-## Soal 4
+1. Semua Client harus menggunakan konfigurasi ip address dari keluarga Tybur (dhcp). <br/>
+2. Client yang melalui bangsa marley mendapatkan range IP dari [prefix IP].1.05 - [prefix IP].1.25 dan [prefix IP].1.50 - [prefix IP].1.100 (2) <br/>
+3. Client yang melalui bangsa eldia mendapatkan range IP dari [prefix IP].2.09 - [prefix IP].2.27 dan [prefix IP].2 .81 - [prefix IP].2.243 (3) <br/>
+4. Client mendapatkan DNS dari keluarga Fritz dan dapat terhubung dengan internet melalui DNS tersebut (4) <br/>
+5. Dikarenakan keluarga Tybur tidak menyukai kaum eldia, maka mereka hanya meminjamkan ip address ke kaum eldia selama 6 menit. Namun untuk kaum marley, keluarga Tybur meminjamkan ip address selama 30 menit. Waktu maksimal dialokasikan untuk peminjaman alamat IP selama 87 menit. (5) <br/>
 
-> Client mendapatkan DNS dari keluarga Fritz dan dapat terhubung dengan internet melalui DNS tersebut 
+Sedikit matematika diperlukan dalam menambahkan lease time pada setiap client yang terhubung:
+* `6 menit * 60 detik = 360 detik`
+* `30 menit * 60 detik = 1800 detik`
+* `87 menit * 60 detik = 5220 detik`
 
 ### Konfigurasi pada Paradis (DHCP Relay)
 ```sh
@@ -400,15 +407,6 @@ net.ipv4.ip_forward=1
 
 service isc-dhcp-relay restart
 ```
-
-## Soal 5
-
-> Dikarenakan keluarga Tybur tidak menyukai kaum eldia, maka mereka hanya meminjamkan ip address ke kaum eldia selama 6 menit. Namun untuk kaum marley, keluarga Tybur meminjamkan ip address selama 30 menit. Waktu maksimal dialokasikan untuk peminjaman alamat IP selama 87 menit.
-
-Sedikit matematika diperlukan dalam menambahkan lease time pada setiap client yang terhubung:
-* `6 menit * 60 detik = 360 detik`
-* `30 menit * 60 detik = 1800 detik`
-* `87 menit * 60 detik = 5220 detik`
 
 ### Konfigurasi pada Tybur (DHCP Server)
 ```sh
@@ -451,8 +449,10 @@ service isc-dhcp-server restart
 ```
 
 ### Bukti Client Terhubung
-
-![client dhcp](assets/gallery/lease.png)
+![Screenshot 2024-10-27 131604](https://github.com/user-attachments/assets/b746099c-aad9-4aab-80ea-8f6f11ddf2d7) <br/>
+![Screenshot 2024-10-27 131615](https://github.com/user-attachments/assets/12051fb0-c15f-4b2a-9d38-b65946c4f0b2) <br/>
+![Screenshot 2024-10-27 131636](https://github.com/user-attachments/assets/3c5ce0d9-07bb-4f99-9b1c-680f8d3fde49) <br/>
+![Screenshot 2024-10-27 131645](https://github.com/user-attachments/assets/cdaf97ab-44b2-4f42-90c5-6e485d2c725a) <br/>
 
 ## Soal 6
 
