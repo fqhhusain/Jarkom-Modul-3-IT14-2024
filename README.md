@@ -78,7 +78,7 @@ Pulau Paradis dan Marley, sama-sama menghadapi ancaman besar dari satu sama lain
 
 ## Topologi
 
-![Topologi](assets/gallery/topologi.png)
+![Topologi](https://github.com/user-attachments/assets/0b885ce3-e0e2-4b0e-858e-2d86acc6435f)
 
 ## Tabel IP
 
