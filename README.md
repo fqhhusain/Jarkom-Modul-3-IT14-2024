@@ -11,9 +11,8 @@ Jarkom-Modul-3-it14-2024
 	- [Pendahuluan](#pendahuluan)
 	- [Topologi](#topologi)
 	- [Tabel IP](#tabel-ip)
-	- [Konfigurasi IP](#konfigurasi-ip)
  	- <details>
-		<summary>Konfigurasi IP</summary>
+		<summary>[Konfigurasi IP](#konfigurasi-ip)</summary>
 		
 		- **[Paradis (Router/DHCP Relay)](#paradis-routerdhcp-relay)**
 		- **[Tybur (DHCP Server)](#tybur-dhcp-server)**
@@ -25,8 +24,8 @@ Jarkom-Modul-3-it14-2024
 		- **[Bertholdt (Laravel Worker)](#bertholdt-laravel-worker)**
 		- **[Reiner (Laravel Worker)](#reiner-laravel-worker)**
 		- **[Armin (PHP Worker)](#armin-php-worker)**
-    		- **[Eren (PHP Worker)](#eren-php-worker)**
-        	- **[Mikasa (PHP Worker)](#mikasa-php-worker)**
+  		- **[Eren (PHP Worker)](#eren-php-worker)**
+    		- **[Mikasa (PHP Worker)](#mikasa-php-worker)**
   		- **[Zeke (Client)](#zeke-client)**
   		- **[Erwin (Client)](#erwin-client)**
   	</details>
