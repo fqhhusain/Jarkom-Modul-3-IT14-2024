@@ -11,68 +11,24 @@ Jarkom-Modul-3-it14-2024
 	- [Pendahuluan](#pendahuluan)
 	- [Topologi](#topologi)
 	- [Tabel IP](#tabel-ip)
-	- # Daftar Isi
-- [Daftar Isi](#daftar-isi)
-  - [Pendahuluan](#pendahuluan)
-  - [Topologi](#topologi)
-  - [Tabel IP](#tabel-ip)
-  - [Konfigurasi IP](#konfigurasi-ip)
-
-# Pendahuluan
-...
-
-# Topologi
-...
-
-# Tabel IP
-...
-
-# Konfigurasi IP
-
-<details>
-  <summary>Konfigurasi IP Detail</summary>
-
-  - **[Paradis (Router/DHCP Relay)](#paradis-routerdhcp-relay)**
-    - IP Address: xx.xx.xx.xx
-
-  - **[Tybur (DHCP Server)](#tybur-dhcp-server)**
-    - IP Address: xx.xx.xx.xx
-
-  - **[Fritz (DNS Server)](#fritz-dns-server)**
-    - IP Address: xx.xx.xx.xx
-
-  - **[Warhammer (Database Server)](#warhammer-database-server)**
-    - IP Address: xx.xx.xx.xx
-
-  - **[Beast (Load Balancer Laravel)](#beast-load-balancer-laravel)**
-    - IP Address: xx.xx.xx.xx
-
-  - **[Colossal (Load Balancer PHP)](#colossal-load-balancer-php)**
-    - IP Address: xx.xx.xx.xx
-
-  - **[Annie (Laravel Worker)](#annie-laravel-worker)**
-    - IP Address: xx.xx.xx.xx
-
-  - **[Bertholdt (Laravel Worker)](#bertholdt-laravel-worker)**
-    - IP Address: xx.xx.xx.xx
-
-  - **[Reiner (Laravel Worker)](#reiner-laravel-worker)**
-    - IP Address: xx.xx.xx.xx
-
-  - **[Armin (PHP Worker)](#armin-php-worker)**
-    - IP Address: xx.xx.xx.xx
-
-  - **[Eren (PHP Worker)](#eren-php-worker)**
-    - IP Address: xx.xx.xx.xx
-
-  - **[Mikasa (PHP Worker)](#mikasa-php-worker)**
-    - IP Address: xx.xx.xx.xx
-
-  - **[Zeke (Client)](#zeke-client)**
-    - IP Address: xx.xx.xx.xx
-
-  - **[Erwin (Client)](#erwin-client)**
-    - IP Address: xx.xx.xx.xx
+	- [Konfigurasi IP](#konfigurasi-ip)
+ 	- <details>
+		<summary>Konfigurasi IP</summary>
+		
+		- **[Paradis (Router/DHCP Relay)](#paradis-routerdhcp-relay)**
+		- **[Tybur (DHCP Server)](#tybur-dhcp-server)**
+		- **[Fritz (DNS Server)](#fritz-dns-server)**
+		- **[Warhammer (Database Server)](#warhammer-database-server)**
+		- **[Beast (Load Balancer Laravel)](#beast-load-balancer-laravel)**
+		- **[Colossal (Load Balancer PHP)](#colossal-load-balancer-php)**
+		- **[Annie (Laravel Worker)](#annie-laravel-worker)**
+		- **[Bertholdt (Laravel Worker)](#bertholdt-laravel-worker)**
+		- **[Reiner (Laravel Worker)](#reiner-laravel-worker)**
+		- **[Armin (PHP Worker)](#armin-php-worker)**
+    		- **[Eren (PHP Worker)](#eren-php-worker)**
+        	- **[Mikasa (PHP Worker)](#mikasa-php-worker)**
+  		- **[Zeke (Client)](#zeke-client)**
+  		- **[Erwin (Client)](#erwin-client)**
   	</details>
    
 	- [Script Awal](#script-awal)
