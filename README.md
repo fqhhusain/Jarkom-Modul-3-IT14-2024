@@ -464,7 +464,7 @@ service isc-dhcp-server restart
 
 > Armin berinisiasi untuk memerintahkan setiap worker PHP untuk melakukan konfigurasi virtual host untuk website berikut https://intip.in/BangsaEldia dengan menggunakan php 7.3 
 
-### Konfigurasi pada PHP Worker
+# Soal 6: Jalankan pada setiap PHP worker (Armin, Eren, Mikasa)
 
 ```sh
 service nginx start
