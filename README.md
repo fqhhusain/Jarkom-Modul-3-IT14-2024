@@ -5,7 +5,7 @@
 | Muhammad Faqih Husain | 5027231023 | 
 | Chelsea Vania Hariyono | 5027231003 | 
 
-### Daftar Isi
+## Daftar Isi
 - [Pendahuluan](#pendahuluan)
 - [Topologi](#topologi)
 - [Tabel IP](#tabel-ip)
@@ -70,7 +70,6 @@
 
 </details>
 
-
 ---
 ## Pendahuluan
 Pulau Paradis dan Marley, sama-sama menghadapi ancaman besar dari satu sama lain. Keduanya membangun infrastruktur pertahanan yang kuat untuk melindungi sistem vital mereka. Dengan strategi yang matang, mereka bersiap menghadapi serangan dan mempertahankan wilayah masing-masing.
@@ -129,7 +128,6 @@ iface eth4 inet static
 	address 192.240.4.1
 	netmask 255.255.255.0
 ```
-
 ### Tybur (DHCP Server)
 ```
 auto eth0
@@ -138,7 +136,6 @@ iface eth0 inet static
 	netmask 255.255.255.0
 	gateway 192.240.4.1
 ```
-
 ### Fritz (DNS Server)
 ```
 auto eth0
@@ -147,7 +144,6 @@ iface eth0 inet static
 	netmask 255.255.255.0
 	gateway 192.240.4.1
 ```
-
 ### Warhammer (Database Server)
 ```
 auto eth0
@@ -156,7 +152,6 @@ iface eth0 inet static
 	netmask 255.255.255.0
 	gateway 192.240.3.1
 ```
-
 ### Beast (Load Balancer Laravel)
 ```
 auto eth0
@@ -165,7 +160,6 @@ iface eth0 inet static
 	netmask 255.255.255.0
 	gateway 192.240.3.1
 ```
-
 ### Colossal (Load Balancer PHP)
 ```
 auto eth0
@@ -174,7 +168,6 @@ iface eth0 inet static
 	netmask 255.255.255.0
 	gateway 192.240.3.1
 ```
-
 ### Annie (Laravel Worker)
 ```
 auto eth0
@@ -183,7 +176,6 @@ iface eth0 inet static
 	netmask 255.255.255.0
 	gateway 192.240.1.1
 ```
-
 ### Bertholdt (Laravel Worker)
 ```
 auto eth0
@@ -192,7 +184,6 @@ iface eth0 inet static
 	netmask 255.255.255.0
 	gateway 192.240.1.1
 ```
-
 ### Reiner (Laravel Worker)
 ```
 auto eth0
@@ -201,7 +192,6 @@ iface eth0 inet static
 	netmask 255.255.255.0
 	gateway 192.240.1.1
 ```
-
 ### Armin (PHP Worker)
 ```
 auto eth0
@@ -210,7 +200,6 @@ iface eth0 inet static
 	netmask 255.255.255.0
 	gateway 192.240.2.1
 ```
-
 ### Eren (PHP Worker)
 ```
 auto eth0
@@ -219,7 +208,6 @@ iface eth0 inet static
 	netmask 255.255.255.0
 	gateway 192.240.2.1
 ```
-
 ### Mikasa (PHP Worker)
 ```
 auto eth0
@@ -228,14 +216,12 @@ iface eth0 inet static
 	netmask 255.255.255.0
 	gateway 192.240.2.1
 ```
-
 ### Zeke (Client)
 ```
 auto eth0
 iface eth0 inet dhcp
 hwaddress ether 7a:47:21:fc:07:a4
 ```
-
 ### Erwin (Client)
 ```
 auto eth0
@@ -243,8 +229,9 @@ iface eth0 inet dhcp
 hwaddress ether ba:89:d6:0f:57:f8
 ```
 
-## Script Awal
 
+---
+## Script Awal
 ### Paradis (DHCP Relay)
 ```sh
 iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE -s 192.240.0.0/16
@@ -253,21 +240,18 @@ apt-get update
 apt-get install isc-dhcp-relay -y
 service isc-dhcp-relay start
 ```
-
 ### Fritz (DNS Server)
 ```sh
 echo 'nameserver 192.168.122.1' > /etc/resolv.conf
 apt-get update
 apt-get install bind9 -y  
 ```
-
 ### Tybur (DHCP Server)
 ```sh
 echo 'nameserver 192.240.4.3' > /etc/resolv.conf   # DNS Server 
 apt-get update
 apt install isc-dhcp-server -y
 ```
-
 ### Warhammer (Database Server)
 ```sh
 echo 'nameserver 192.240.4.3' > /etc/resolv.conf   # DNS Server 
@@ -275,7 +259,6 @@ apt-get update
 apt-get install mariadb-server -y
 service mysql start
 ```
-
 ### Laravel Worker
 ```sh
 echo 'nameserver 192.240.4.3' > /etc/resolv.conf   # DNS Server 
@@ -290,7 +273,6 @@ apt-get install nginx -y
 apt-get install wget unzip -y
 apt-get install php7.3-fpm php7.3-common php7.3-mysql php7.3-gmp php7.3-curl php7.3-intl php7.3-mbstring php7.3-xmlrpc php7.3-gd php7.3-xml php7.3-cli php7.3-zip -y
 ```
-
 ### Load Balancer PHP
 ```sh
 echo 'nameserver 192.240.4.3' > /etc/resolv.conf   # DNS Server 
@@ -298,19 +280,17 @@ apt-get update
 apt-get install nginx -y
 apt-get install apache2-utils -y
 ```
-
 ### Client
 ```
 apt-get update
 apt install apache2-utils -y
 ```
 
+
 ---
 ## Soal 0
 > Pulau Paradis telah menjadi tempat yang damai selama 1000 tahun, namun kedamaian tersebut tidak bertahan selamanya. Perang antara kaum Marley dan Eldia telah mencapai puncak. Kaum Marley yang dipimpin oleh Zeke, me-register domain name **marley.yyy.com** untuk worker Laravel mengarah pada **Annie**. Namun ternyata tidak hanya kaum Marley saja yang berinisiasi, kaum Eldia ternyata sudah mendaftarkan domain name **eldia.yyy.com** untuk worker PHP (0) mengarah pada **Armin**.
-
 ### Konfigurasi pada Fritz (DNS Server)
-
 ```sh
 echo 'zone "marley.it14.com" {
     type master;
@@ -374,7 +354,6 @@ service bind9 restart
 
 ## Soal 1 - 5
 > Lakukan konfigurasi sesuai dengan peta yang sudah diberikan.
-
 * [Topologi](#topologi)
 * [Tabel IP](#tabel-ip)
 * [Konfigurasi IP](#konfigurasi-ip)
@@ -404,7 +383,6 @@ net.ipv4.ip_forward=1
 
 service isc-dhcp-relay restart
 ```
-
 ### Konfigurasi pada Tybur (DHCP Server)
 ```sh
 echo '
@@ -450,17 +428,16 @@ subnet 192.240.4.0 netmask 255.255.255.0 {
 
 service isc-dhcp-server restart
 ```
-
 ### Bukti Client Terhubung
 ![Screenshot 2024-10-27 131604](https://github.com/user-attachments/assets/b746099c-aad9-4aab-80ea-8f6f11ddf2d7) <br/>
 ![Screenshot 2024-10-27 131615](https://github.com/user-attachments/assets/12051fb0-c15f-4b2a-9d38-b65946c4f0b2) <br/>
 ![Screenshot 2024-10-27 131636](https://github.com/user-attachments/assets/3c5ce0d9-07bb-4f99-9b1c-680f8d3fde49) <br/>
 ![Screenshot 2024-10-27 131645](https://github.com/user-attachments/assets/cdaf97ab-44b2-4f42-90c5-6e485d2c725a) <br/>
 
+
 ## Soal 6
 > Armin berinisiasi untuk memerintahkan setiap worker PHP untuk melakukan konfigurasi virtual host untuk website berikut https://intip.in/BangsaEldia dengan menggunakan php 7.3 
-
-# Soal 6: Jalankan pada setiap PHP worker (Armin, Eren, Mikasa)
+### Jalankan pada setiap PHP worker (Armin, Eren, Mikasa)
 ```sh
 service nginx start
 service php7.3-fpm start
@@ -500,7 +477,6 @@ server {
 
 service nginx restart
 ```
-
 Bila website sudah terhubung dengan baik, maka ini akan terlihat:
 pada client 
 ```
@@ -512,9 +488,9 @@ lynx http://192.240.2.2
 ![Screenshot 2024-10-27 133754](https://github.com/user-attachments/assets/713987a2-6d42-43ce-8cd8-f5176e49b00b) <br/>
 ![Screenshot 2024-10-27 133820](https://github.com/user-attachments/assets/44e83401-64d6-4c0b-9f56-c9f5cb084bc4) <br/>
 
+
 ## Soal 7
 > Dikarenakan Armin sudah mendapatkan kekuatan titan colossal, maka bantulah kaum eldia menggunakan colossal agar dapat bekerja sama dengan baik. Kemudian lakukan testing dengan 6000 request dan 200 request/second. 
-
 ### Konfigurasi pada Colossal (Load Balancer PHP)
 ```sh
 cp /etc/nginx/sites-available/default /etc/nginx/sites-available/lb_php
@@ -547,7 +523,6 @@ rm /etc/nginx/sites-enabled/default
 
 service nginx restart
 ```
-
 ### Konfigurasi pada Fritz (DNS Server)
 Ubah untuk mengarahkan eldia.it14.com ke IP Colossal (Load Balancer PHP)
 ```sh
@@ -615,9 +590,9 @@ Pada Erwin
 ```
 ab -n 6000 -c 200 http://eldia.it14.com/
 ```
-
 ![Screenshot 2024-10-27 135432](https://github.com/user-attachments/assets/f128a37b-60b9-4cf7-9ae4-e7bb4e066679) <br/>
 ![Screenshot 2024-10-27 135523](https://github.com/user-attachments/assets/756c9411-037b-45e8-8707-06bb6cb0a90f) <br/>
+
 
 ## Soal 8
 > Karena Erwin meminta “laporan kerja Armin”, maka dari itu buatlah analisis hasil testing dengan 1000 request dan 75 request/second untuk masing-masing algoritma Load Balancer dengan ketentuan sebagai berikut:
@@ -626,12 +601,13 @@ b. Report hasil testing pada Apache Benchmark
 c. Grafik request per second untuk masing masing algoritma. 
 d. Analisis
 
+
 ## Soal 9
 > Dengan menggunakan algoritma Least-Connection, lakukan testing dengan menggunakan 3 worker, 2 worker, dan 1 worker sebanyak 1000 request dengan 10 request/second, kemudian tambahkan grafiknya pada “laporan kerja Armin”.
 
+
 ## Soal 10
 > Selanjutnya coba tambahkan keamanan dengan konfigurasi autentikasi di Colossal dengan dengan kombinasi username: “arminannie” dan password: “jrkmyyy”, dengan yyy merupakan kode kelompok. Terakhir simpan file “htpasswd” nya di /etc/nginx/supersecret/ 
-
 ### Konfigurasi pada Colossal (Load Balancer PHP)
 ```sh
 mkdir -p /etc/nginx/supersecret
@@ -671,14 +647,12 @@ rm /etc/nginx/sites-enabled/default
 service nginx restart
 ```
 Pada client akses lynx http://eldia.it14.com
-
 Akan muncul kegagalan auth bila salah kredensial:
-
 ![Screenshot 2024-10-27 143551](https://github.com/user-attachments/assets/f18fa932-9d2b-4662-acce-6ece378d7b1c)
+
 
 ## Soal 11
 > Lalu buat untuk setiap request yang mengandung /titan akan di proxy passing menuju halaman https://attackontitan.fandom.com/wiki/Attack_on_Titan_Wiki hint: (proxy_pass)
-
 ### Konfigurasi pada Colossal (Load Balancer PHP)
 ```sh
 mkdir -p /etc/nginx/supersecret
@@ -725,13 +699,12 @@ rm /etc/nginx/sites-enabled/default
 
 service nginx restart
 ```
-
 Akan terlihat Attack on Titan wiki bila memasukkan `lynx eldia.it14.com/titan`:
 ![Screenshot 2024-10-27 144354](https://github.com/user-attachments/assets/b16ca568-ad37-4982-8f42-2187e8ea32e9)
 
+
 ## Soal 12
 > Selanjutnya Colossal ini hanya boleh diakses oleh client dengan IP [Prefix IP].1.77, [Prefix IP].1.88, [Prefix IP].2.144, dan [Prefix IP].2.156. hint: (fixed in dulu clientnya)
-
 ### Konfigurasi pada Colossal (Load Balancer PHP)
 ```sh
 mkdir -p /etc/nginx/supersecret
@@ -783,9 +756,7 @@ rm /etc/nginx/sites-enabled/default
 
 service nginx restart
 ```
-
 Bila IP tidak sesuai maka akan muncul sebagai berikut:
-
 ![failed ip](https://github.com/user-attachments/assets/973d04ea-9e44-4305-85ea-85b18aa39615) <br/>
 ![Screenshot 2024-10-27 152250](https://github.com/user-attachments/assets/2b6a3a30-1830-4d28-a8cd-674542759709)
 
@@ -843,6 +814,7 @@ Stop dan Start Client<br/>
 Cek pada terminal client apakah ip sudah sesuai dengan `ip a`<br/>
 Jika sudah sesuai maka client dapat mengakses lynx http://eldia.it14.com
 
+
 ## Soal 13
 ### Konfigurasi pada Warhammer (Database)
 ```sh
@@ -868,14 +840,12 @@ sed -i 's/127.0.0.1/0.0.0.0/g' /etc/mysql/mariadb.conf.d/50-server.cnf
 
 service mysql restart
 ```
-
 ### Cara Menambahkan User
 Set up root user tanpa password:
 ```
 mysql -u root -p
 Enter password: (kosong)
 ```
-
 Menambahkan user it14 pada database:
 ```mysql
 CREATE USER 'it14'@'%' IDENTIFIED BY 'it14';
@@ -885,16 +855,16 @@ GRANT ALL PRIVILEGES ON *.* TO 'it14'@'%';
 GRANT ALL PRIVILEGES ON *.* TO 'it14'@'localhost';
 FLUSH PRIVILEGES;
 ```
-
 ### Check pada Setiap Worker
 Untuk memastikan setiap worker "Laravel" dapat connect kepada database yang dibuat dalam Warhammer:
-
 ```
 mysql --host=192.240.3.2 --port=3306 --user=it14 --password=it14 db_it14 -e "SHOW DATABASES;"
 ```
 ![Screenshot 2024-10-27 164232](https://github.com/user-attachments/assets/8a1eb1d3-a972-4a40-9b0b-f1235ef596b0)
 ![Screenshot 2024-10-27 164224](https://github.com/user-attachments/assets/eccbf6bc-1133-49f2-9fdb-8b7fb7e39e04)
 ![Screenshot 2024-10-27 164217](https://github.com/user-attachments/assets/876791e8-ba77-46c8-b39b-e21469b72ed2)
+
+
 
 
 
