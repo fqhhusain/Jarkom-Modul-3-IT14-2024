@@ -15,11 +15,11 @@ Jarkom-Modul-3-it14-2024
 		<summary>Konfigurasi IP</summary>
 		
 		- **[Paradis (Router/DHCP Relay)](#paradis-routerdhcp-relay)**
-		- **[Tybur (DHCP Server)](#tybur-dhcp-server)**
-		- **[Fritz (DNS Server)](#fritz-dns-server)**
-		- **[Warhammer (Database Server)](#warhammer-database-server)**
-		- **[Beast (Load Balancer Laravel)](#beast-load-balancer-laravel)**
-		- **[Colossal (Load Balancer PHP)](#colossal-load-balancer-php)**
+  		- **[Tybur (DHCP Server)](#tybur-dhcp-server)**
+  		- **[Fritz (DNS Server)](#fritz-dns-server)**
+    		- **[Warhammer (Database Server)](#warhammer-database-server)**
+      		- **[Beast (Load Balancer Laravel)](#beast-load-balancer-laravel)**
+          	- **[Colossal (Load Balancer PHP)](#colossal-load-balancer-php)**
 		- **[Annie (Laravel Worker)](#annie-laravel-worker)**
 		- **[Bertholdt (Laravel Worker)](#bertholdt-laravel-worker)**
 		- **[Reiner (Laravel Worker)](#reiner-laravel-worker)**
