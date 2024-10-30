@@ -7,12 +7,12 @@
 
 ## Daftar Isi
 Jarkom-Modul-3-it14-2024
-- [Daftar Isi](#daftar-isi)
+
+Daftar Isi
 	- [Pendahuluan](#pendahuluan)
 	- [Topologi](#topologi)
 	- [Tabel IP](#tabel-ip)
  	- <details><summary>Konfigurasi IP</summary>
-		
  		- *[Paradis (Router/DHCP Relay)](#paradis-routerdhcp-relay)*
  		- *[Tybur (DHCP Server)](#tybur-dhcp-server)*
  		- *[Fritz (DNS Server)](#fritz-dns-server)*
@@ -26,11 +26,8 @@ Jarkom-Modul-3-it14-2024
  		- *[Eren (PHP Worker)](#eren-php-worker)*
  		- *[Mikasa (PHP Worker)](#mikasa-php-worker)*
  		- *[Zeke (Client)](#zeke-client)*
- 		- *[Erwin (Client)](#erwin-client)*
-  	</details>
-   
+ 		- *[Erwin (Client)](#erwin-client)*</details>
 	- <details><summary>Script Awal</summary>
-		
   		- *[Paradis (DHCP Relay)](#paradis-dhcp-relay)*
 		- *[Fritz (DNS Server)](#fritz-dns-server-1)*
 		- *[Tybur (DHCP Server)](#tybur-dhcp-server-1)*
@@ -41,7 +38,7 @@ Jarkom-Modul-3-it14-2024
 		- *[Client](#client)*
 	</details>
 
-	Soal
+Soal
    	1. [Soal 0](#soal-0) ([Konfigurasi pada Fritz (DNS Server)](#konfigurasi-pada-fritz-dns-server))
    	2. [Soal 1](#soal-1)
    	3. [Soal 2](#soal-2) ([Konfigurasi pada Tybur (DHCP Server)](#konfigurasi-pada-tybur-dhcp-server))
