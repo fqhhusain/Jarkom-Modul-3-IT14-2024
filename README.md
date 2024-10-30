@@ -11,7 +11,8 @@ Jarkom-Modul-3-it14-2024
 	- [Pendahuluan](#pendahuluan)
 	- [Topologi](#topologi)
 	- [Tabel IP](#tabel-ip)
-	- [Konfigurasi IP](#konfigurasi-ip)
+	- <details>
+		<summary>[Konfigurasi IP](#konfigurasi-ip)</summary>
 		- [Paradis (Router/DHCP Relay)](#paradis-routerdhcp-relay)
 		- [Tybur (DHCP Server)](#tybur-dhcp-server)
 		- [Fritz (DNS Server)](#fritz-dns-server)
@@ -26,6 +27,7 @@ Jarkom-Modul-3-it14-2024
 		- [Mikasa (PHP Worker)](#mikasa-php-worker)
 		- [Zeke (Client)](#zeke-client)
 		- [Erwin (Client)](#erwin-client)
+  	</details>
 	- [Script Awal](#script-awal)
 		- [Paradis (DHCP Relay)](#paradis-dhcp-relay)
 		- [Fritz (DNS Server)](#fritz-dns-server-1)
