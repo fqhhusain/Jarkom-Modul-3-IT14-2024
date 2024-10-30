@@ -42,17 +42,17 @@
 - <details><summary>Soal</summary>
 	
 	1. [Soal 0](#soal-0) ([Konfigurasi pada Fritz (DNS Server)](#konfigurasi-pada-fritz-dns-server))
-   	2. [Soal 1](#soal-1)
-   	3. [Soal 2](#soal-2) ([Konfigurasi pada Tybur (DHCP Server)](#konfigurasi-pada-tybur-dhcp-server))
-   	4. [Soal 3](#soal-3) ([Konfigurasi pada Tybur (DHCP Server)](#konfigurasi-pada-tybur-dhcp-server-1))
-   	5. [Soal 4](#soal-4)
-  		- [Konfigurasi pada Paradis (DHCP Relay)](#konfigurasi-pada-paradis-dhcp-relay)
-   	   	- [Konfigurasi pada Tybur (DHCP Server)](#konfigurasi-pada-tybur-dhcp-server-2)
-   	6. [Soal 5](#soal-5)
+	2. [Soal 1](#soal-1)
+	3. [Soal 2](#soal-2) ([Konfigurasi pada Tybur (DHCP Server)](#konfigurasi-pada-tybur-dhcp-server))
+	4. [Soal 3](#soal-3) ([Konfigurasi pada Tybur (DHCP Server)](#konfigurasi-pada-tybur-dhcp-server-1))
+	5. [Soal 4](#soal-4)
+		- [Konfigurasi pada Paradis (DHCP Relay)](#konfigurasi-pada-paradis-dhcp-relay)
+		- [Konfigurasi pada Tybur (DHCP Server)](#konfigurasi-pada-tybur-dhcp-server-2)
+	6. [Soal 5](#soal-5)
 		- [Konfigurasi pada Tybur (DHCP Server)](#konfigurasi-pada-tybur-dhcp-server-3)
 		- [Bukti Client Terhubung](#bukti-client-terhubung)
-   	7. [Soal 6](#soal-6) ([Konfigurasi pada PHP Worker](#konfigurasi-pada-php-worker))
-   	8. [Soal 7](#soal-7)
+	7. [Soal 6](#soal-6) ([Konfigurasi pada PHP Worker](#konfigurasi-pada-php-worker))
+	8. [Soal 7](#soal-7)
 		- [Konfigurasi pada Colossal (Load Balancer PHP)](#konfigurasi-pada-colossal-load-balancer-php)
 		- [Konfigurasi pada Fritz (DNS Server)](#konfigurasi-pada-fritz-dns-server-1)
 		- [Test Request](#test-request)
@@ -67,7 +67,9 @@
 		- [Konfigurasi pada Warhammer (Database)](#konfigurasi-pada-warhammer-database)
 		- [Cara Menambahkan User](#cara-menambahkan-user)
 		- [Check pada Setiap Worker](#check-pada-setiap-worker)
+
 </details>
+
 
 ---
 ## Pendahuluan
