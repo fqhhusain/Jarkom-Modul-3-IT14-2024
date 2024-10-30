@@ -13,6 +13,7 @@ Jarkom-Modul-3-it14-2024
 	- [Tabel IP](#tabel-ip)
  	- <details>
 		<summary>Konfigurasi IP</summary>
+		
  		- **[Paradis (Router/DHCP Relay)](#paradis-routerdhcp-relay)**
  		- **[Tybur (DHCP Server)](#tybur-dhcp-server)**
  		- **[Fritz (DNS Server)](#fritz-dns-server)**
