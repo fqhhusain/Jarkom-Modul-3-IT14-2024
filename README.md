@@ -5,16 +5,14 @@
 | Muhammad Faqih Husain | 5027231023 | 
 | Chelsea Vania Hariyono | 5027231003 | 
 
-## Daftar Isi
-Jarkom-Modul-3-it14-2024
-
-Daftar Isi
+### Daftar Isi
 - [Pendahuluan](#pendahuluan)
 - [Topologi](#topologi)
 - [Tabel IP](#tabel-ip)
 - <details><summary>Konfigurasi IP</summary>
- - *[Paradis (Router/DHCP Relay)](#paradis-routerdhcp-relay)*
- - *[Tybur (DHCP Server)](#tybur-dhcp-server)*
+	
+	- *[Paradis (Router/DHCP Relay)](#paradis-routerdhcp-relay)*
+	- *[Tybur (DHCP Server)](#tybur-dhcp-server)*
  - *[Fritz (DNS Server)](#fritz-dns-server)*
  - *[Warhammer (Database Server)](#warhammer-database-server)*
  - *[Beast (Load Balancer Laravel)](#beast-load-balancer-laravel)*
@@ -40,7 +38,7 @@ Daftar Isi
 		- *[Client](#client)*
 	</details>
 
-Soal
+### Soal
 1. [Soal 0](#soal-0) ([Konfigurasi pada Fritz (DNS Server)](#konfigurasi-pada-fritz-dns-server))
 2. [Soal 1](#soal-1)
 3. [Soal 2](#soal-2) ([Konfigurasi pada Tybur (DHCP Server)](#konfigurasi-pada-tybur-dhcp-server))
