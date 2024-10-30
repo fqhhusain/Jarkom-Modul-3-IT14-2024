@@ -40,12 +40,11 @@ Jarkom-Modul-3-it14-2024
 		- *[Load Balancer PHP](#load-balancer-php)*
 		- *[Client](#client)*
 	</details>
- 
-	- [Soal 0](#soal-0)
-		- [Konfigurasi pada Fritz (DNS Server)](#konfigurasi-pada-fritz-dns-server)
-	- [Soal 1](#soal-1)
-	- [Soal 2](#soal-2)
-		- [Konfigurasi pada Tybur (DHCP Server)](#konfigurasi-pada-tybur-dhcp-server)
+
+	- Soal
+   	1. [Soal 0](#soal-0) ([Konfigurasi pada Fritz (DNS Server)](#konfigurasi-pada-fritz-dns-server))
+   	2. [Soal 1](#soal-1)
+   	3. [Soal 2](#soal-2) ([Konfigurasi pada Tybur (DHCP Server)](#konfigurasi-pada-tybur-dhcp-server))
 	- [Soal 3](#soal-3)
 		- [Konfigurasi pada Tybur (DHCP Server)](#konfigurasi-pada-tybur-dhcp-server-1)
 	- [Soal 4](#soal-4)
