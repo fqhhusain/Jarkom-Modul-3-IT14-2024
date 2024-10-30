@@ -1,5 +1,5 @@
 # Jarkom-Modul-3-IT14-2024
-***
+#
 ### Anggota Kelompok
 | Nama | NRP | 
 |---|---|
@@ -71,7 +71,7 @@
 
 </details>
 
-#
+
 ## Pendahuluan
 Pulau Paradis dan Marley, sama-sama menghadapi ancaman besar dari satu sama lain. Keduanya membangun infrastruktur pertahanan yang kuat untuk melindungi sistem vital mereka. Dengan strategi yang matang, mereka bersiap menghadapi serangan dan mempertahankan wilayah masing-masing.
 
