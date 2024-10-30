@@ -14,32 +14,35 @@ Jarkom-Modul-3-it14-2024
  	- <details>
 		<summary>Konfigurasi IP</summary>
 		
- 		- **[Paradis (Router/DHCP Relay)](#paradis-routerdhcp-relay)**
- 		- **[Tybur (DHCP Server)](#tybur-dhcp-server)**
- 		- **[Fritz (DNS Server)](#fritz-dns-server)**
- 		- **[Warhammer (Database Server)](#warhammer-database-server)**
- 		- **[Beast (Load Balancer Laravel)](#beast-load-balancer-laravel)**
- 		- **[Colossal (Load Balancer PHP)](#colossal-load-balancer-php)**
- 		- **[Annie (Laravel Worker)](#annie-laravel-worker)**
- 		- **[Bertholdt (Laravel Worker)](#bertholdt-laravel-worker)**
- 		- **[Reiner (Laravel Worker)](#reiner-laravel-worker)**
- 		- **[Armin (PHP Worker)](#armin-php-worker)**
- 		- **[Eren (PHP Worker)](#eren-php-worker)**
- 		- **[Mikasa (PHP Worker)](#mikasa-php-worker)**
- 		- **[Zeke (Client)](#zeke-client)**
- 		- **[Erwin (Client)](#erwin-client)**
+ 		- *[Paradis (Router/DHCP Relay)](#paradis-routerdhcp-relay)*
+ 		- *[Tybur (DHCP Server)](#tybur-dhcp-server)*
+ 		- *[Fritz (DNS Server)](#fritz-dns-server)*
+ 		- *[Warhammer (Database Server)](#warhammer-database-server)*
+ 		- *[Beast (Load Balancer Laravel)](#beast-load-balancer-laravel)*
+ 		- *[Colossal (Load Balancer PHP)](#colossal-load-balancer-php)*
+ 		- *[Annie (Laravel Worker)](#annie-laravel-worker)*
+ 		- *[Bertholdt (Laravel Worker)](#bertholdt-laravel-worker)*
+ 		- *[Reiner (Laravel Worker)](#reiner-laravel-worker)*
+ 		- *[Armin (PHP Worker)](#armin-php-worker)*
+ 		- *[Eren (PHP Worker)](#eren-php-worker)*
+ 		- *[Mikasa (PHP Worker)](#mikasa-php-worker)*
+ 		- *[Zeke (Client)](#zeke-client)*
+ 		- *[Erwin (Client)](#erwin-client)*
   	</details>
    
-	- [Script Awal](#script-awal)
-		- [Paradis (DHCP Relay)](#paradis-dhcp-relay)
-		- [Fritz (DNS Server)](#fritz-dns-server-1)
-		- [Tybur (DHCP Server)](#tybur-dhcp-server-1)
-		- [Warhammer (Database Server)](#warhammer-database-server-1)
-		- [Laravel Worker](#laravel-worker)
-		- [PHP Worker](#php-worker)
-		- [Load Balancer PHP](#load-balancer-php)
-		- [Client](#client)
-  
+	- <details>
+		<summary>Script Awal</summary>
+		
+  		- *[Paradis (DHCP Relay)](#paradis-dhcp-relay)*
+		- *[Fritz (DNS Server)](#fritz-dns-server-1)*
+		- *[Tybur (DHCP Server)](#tybur-dhcp-server-1)*
+		- *[Warhammer (Database Server)](#warhammer-database-server-1)*
+		- *[Laravel Worker](#laravel-worker)*
+		- *[PHP Worker](#php-worker)*
+		- *[Load Balancer PHP](#load-balancer-php)*
+		- *[Client](#client)*
+	</details>
+ 
 	- [Soal 0](#soal-0)
 		- [Konfigurasi pada Fritz (DNS Server)](#konfigurasi-pada-fritz-dns-server)
 	- [Soal 1](#soal-1)
