@@ -417,22 +417,28 @@ INTERFACESv6=""
 
 echo '
 subnet 192.240.1.0 netmask 255.255.255.0 {
+#Soal 2 Range IP Marley
 	range 192.240.1.5 192.240.1.25;
 	range 192.240.1.50 192.240.1.100;
 	option routers 192.240.1.1;
+#Soal 4 DNS Server Fritz
 	option broadcast-address 192.240.1.255;
 	option domain-name-servers 192.240.4.3;
-	default-lease-time 360;
+#Soal 5 Durasi DHCP Marley
+	default-lease-time 1800;
 	max-lease-time 5220;
 }
 
 subnet 192.240.2.0 netmask 255.255.255.0 {
+#Soal 3 Range IP Eldia
 	range 192.240.2.9 192.240.2.27;
 	range 192.240.2.81 192.240.2.243;
 	option routers 192.240.2.1;
+#Soal 4 DNS Server Fritz
 	option broadcast-address 192.240.1.255;
 	option domain-name-servers 192.240.4.3;
-	default-lease-time 1800;
+#Soal 5 Durasi DHCP Eldia
+	default-lease-time 36;
 	max-lease-time 5220;
 }
 
