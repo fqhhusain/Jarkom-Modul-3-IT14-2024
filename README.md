@@ -6,9 +6,8 @@
 | Chelsea Vania Hariyono | 5027231003 | 
 
 ## Daftar Isi
-
-- [Jarkom-Modul-2-it14-2024](#jarkom-modul-2-it14-2024)
-	- [Daftar Isi](#daftar-isi)
+Jarkom-Modul-3-it14-2024
+- [Daftar Isi](#daftar-isi)
 	- [Pendahuluan](#pendahuluan)
 	- [Topologi](#topologi)
 	- [Tabel IP](#tabel-ip)
@@ -36,6 +35,7 @@
 		- [PHP Worker](#php-worker)
 		- [Load Balancer PHP](#load-balancer-php)
 		- [Client](#client)
+  
 	- [Soal 0](#soal-0)
 		- [Konfigurasi pada Fritz (DNS Server)](#konfigurasi-pada-fritz-dns-server)
 	- [Soal 1](#soal-1)
@@ -71,17 +71,14 @@
 
 
 ## Pendahuluan
-
 Pulau Paradis dan Marley, sama-sama menghadapi ancaman besar dari satu sama lain. Keduanya membangun infrastruktur pertahanan yang kuat untuk melindungi sistem vital mereka. Dengan strategi yang matang, mereka bersiap menghadapi serangan dan mempertahankan wilayah masing-masing.
 
 **Bangsa Marley,** dipimpin oleh **Zeke,** telah mempersiapkan **Annie, Bertholdt, dan Reiner** untuk menyerang menggunakan **Laravel Worker.** Di sisi lain, **Klan Eldia** dari **Paradis** telah mempersiapkan **Armin, Eren, dan Mikasa** sebagai **PHP Worker** untuk mempertahankan pulau tersebut. **Warhammer** bertindak sebagai **Database Server**, sementara **Beast** dan **Colossal** sebagai **Load Balancer.** 
 
 ## Topologi
-
 ![Topologi](https://github.com/user-attachments/assets/0b885ce3-e0e2-4b0e-858e-2d86acc6435f)
 
 ## Tabel IP
-
 | **Node**         | **Node Type**       | **Interface** | **IP Address** | **Gateway**     |
 |------------------|---------------------|---------------|----------------|-----------------|
 | **Paradis**      | Router/DHCP Relay   | eth0          | DHCP           | -               |
@@ -105,7 +102,6 @@ Pulau Paradis dan Marley, sama-sama menghadapi ancaman besar dari satu sama lain
 
 
 ## Konfigurasi IP
-
 ### Paradis (Router/DHCP Relay)
 ```
 auto eth0
