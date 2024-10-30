@@ -438,7 +438,7 @@ subnet 192.240.2.0 netmask 255.255.255.0 {
 	option broadcast-address 192.240.1.255;
 	option domain-name-servers 192.240.4.3;
 #Soal 5 Durasi DHCP Eldia
-	default-lease-time 36;
+	default-lease-time 360;
 	max-lease-time 5220;
 }
 
