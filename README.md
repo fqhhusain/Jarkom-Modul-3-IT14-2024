@@ -12,7 +12,7 @@ Jarkom-Modul-3-it14-2024
 	- [Topologi](#topologi)
 	- [Tabel IP](#tabel-ip)
  	- <details>
-		<summary>[Konfigurasi IP](#konfigurasi-ip)</summary>
+		<summary>Konfigurasi IP</summary>
 		
 		- **[Paradis (Router/DHCP Relay)](#paradis-routerdhcp-relay)**
 		- **[Tybur (DHCP Server)](#tybur-dhcp-server)**
