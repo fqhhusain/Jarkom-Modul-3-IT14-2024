@@ -11,7 +11,7 @@ Jarkom-Modul-3-it14-2024
 	- [Pendahuluan](#pendahuluan)
 	- [Topologi](#topologi)
 	- [Tabel IP](#tabel-ip)
- 	- <details>
+ 	  <details>
 		<summary>Konfigurasi IP</summary>
 		
  		- *[Paradis (Router/DHCP Relay)](#paradis-routerdhcp-relay)*
@@ -29,7 +29,8 @@ Jarkom-Modul-3-it14-2024
  		- *[Zeke (Client)](#zeke-client)*
  		- *[Erwin (Client)](#erwin-client)*
   	</details>
-   
+
+
 	- <details>
 		<summary>Script Awal</summary>
 		
